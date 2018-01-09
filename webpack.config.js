@@ -1,6 +1,10 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const dotenv = require('dotenv');
+const production = process.env.NODE_ENV === 'production';
+
+dotenv.load();
 
 module.exports = {
   devtool: 'inline-source-map',

@@ -1,4 +1,5 @@
 ## .gitignore
+.env
 _design
 .vscode
 build
